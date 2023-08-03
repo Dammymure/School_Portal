@@ -12,7 +12,7 @@ const HomeHeader = () => {
  return (
   <div className=''>
    <header className='flex justify-between px-1 md:px-10 m-auto align-middle items-center top-0 left-0 w-[100%] bg-inherit'>
-    <img className="w-12 md:w-14 h-[100%]" src={Logo} alt="logo" />
+    <img className="w-12 md:w-14 h-[100%] cursor-pointer" src={Logo} alt="logo" />
 
     <div
      className={`absolute flex backdrop-blur-[9px] bg-white/30 w-[70%] min-h-[100vh] top-[0px] left-0 left-${isMenuOpen ? '' : '[-100%]'}  duration-500 md:bg-inherit md:min-h-fit md:w-auto md:static`}
@@ -28,13 +28,13 @@ const HomeHeader = () => {
        <p className='text-[12px] text-gray-600 leading-5'>&#x40;dammymure1@gmail.com</p>
        <p className='text-[12px] text-gray-600 leading-5'>&#x2706;+234-817-252-1037</p>
       </div>
-      <li className='border-b-[1px] border-gray-400 pb-2 pt-3 font-semibold md:border-none md:p-0 md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black'>Department</li>
-      <li className='border-b-[1px] border-gray-400 pb-2 font-semibold md:border-none md:p-0 md:text-sm  bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black'>About Us</li>
-      <li className='border-b-[1px] border-gray-400 pb-2 font-semibold md:border-none md:p-0 md:text-sm  bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black'>Contact</li>
-      <li className='font-semibold md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black '>School Life</li>
+      <li className='border-b-[1px] border-gray-400 pb-2 pt-3 font-semibold md:border-none md:p-0 md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black cursor-pointer'>Department</li>
+      <li className='border-b-[1px] border-gray-400 pb-2 font-semibold md:border-none md:p-0 md:text-sm  bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black cursor-pointer'>About Us</li>
+      <li className='border-b-[1px] border-gray-400 pb-2 font-semibold md:border-none md:p-0 md:text-sm  bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black cursor-pointer'>Contact</li>
+      <li className='font-semibold md:text-sm bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-500 hover:from-black hover:to-black cursor-pointer'>School Life</li>
       <div className="flex flex-col mx-auto gap-3 w-[100%] md:gap-5 md:hidden">
-       <button className="bg-orange-400 rounded-3xl px-5 py-2 md:text-sm ">Register</button>
-       <button className="bg-orange-400 rounded-3xl px-5 py-2 md:text-sm ">Sign in</button>
+       <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl px-5 py-2 md:text-sm text-white">Register</button>
+       <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl px-5 py-2 md:text-sm text-white">Sign in</button>
       </div>
      </ul>
     </div>

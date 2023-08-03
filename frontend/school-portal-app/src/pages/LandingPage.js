@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../components/Carousel';
 import Gif from '../images/gif.gif'
 import Check from '../images/checklistgif.gif'
 import Assessment from '../images/assessment.png'
@@ -46,7 +47,7 @@ const LandingPage = () => {
   <section className="mt-20">
    <div>
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white rounded-xl w-[80%] m-auto">
-     <li className=" rounded-xl min-h-[100%] pb-3 hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)] ">
+     <li className=" rounded-xl min-h-[100%] pb-3 hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)] ">
       <div className=" my-6 mx-6 md:my-8 h-[25vh]">
       <img src={Interactive} alt="" className="w-10 md:w-18 text-white"/>
       <div className="h-fit-content">
@@ -55,7 +56,7 @@ const LandingPage = () => {
       </div>
       </div>
      </li>
-     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
+     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
       <div className="my-6 mx-6 md:my-8 h-[25vh] ">
       <img src={Assessment} alt="" className="w-10 md:w-18 text-white"/>
       <div>
@@ -64,7 +65,7 @@ const LandingPage = () => {
       </div>
       </div>
      </li>
-     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
+     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
       <div className="my-6 mx-6 md:my-8 h-[25vh] ">
       <img src={ExamPaper} alt="" className="w-10 md:w-18 text-white"/>
       <div>
@@ -73,7 +74,7 @@ const LandingPage = () => {
       </div>
       </div>
      </li>
-     <li className="rounded-xl pb-3  hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
+     <li className="rounded-xl pb-3  hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
       <div className="my-6 mx-6 md:my-8 h-[25vh]">
       <img src={Person} alt="" className="w-10 md:w-18 text-white"/>
       <div>
@@ -82,7 +83,7 @@ const LandingPage = () => {
       </div>
       </div>
      </li>
-     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
+     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
       <div className="my-6 mx-6 md:my-8 h-[25vh] ">
       <img src={Computer} alt="" className="w-10 md:w-18 text-white"/>
       <div>
@@ -91,7 +92,7 @@ const LandingPage = () => {
       </div>
       </div>
      </li>
-     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-300 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
+     <li className="rounded-xl pb-3 hover:bg-[#70d6ff] ease-in-out duration-100 hover:scale-y-[1.05] hover:drop-shadow-2xl3 hover:drop-shadow-[0_35px_35px_rgba(43,45,66,0.5)]">
       <div className="my-6 mx-6 md:my-8 h-[25vh]">
       <img src={Exam} alt="" className="w-10 md:w-18 text-white"/>
       <div>
@@ -107,7 +108,7 @@ const LandingPage = () => {
 
   <section className="mt-20">
 
-   <div className="grid grid-cols-1 p-2 md:p-0 md:grid-cols-2 w-[80%] m-auto">
+   <div className="grid grid-cols-1 p-2 md:p-0 md:grid-cols-2 md:pr-20 w-[80%] m-auto">
    <div>
     <div className="flex z-0">
      <div className="relative border-white h-52 md:h-40 border-l-8 left-[28px] z-0 "></div>
@@ -183,11 +184,15 @@ const LandingPage = () => {
     </div>
    </div>
 
-   <div>
+   <div className="md:pl-48">
     <div><img src={Iphone} alt=""/></div>
     <div><img src={Check} alt=""/></div>
    </div>
    </div>
+  </section>
+
+  <section className="m-auto">
+   <Carousel/>
   </section>
  </div>;
 }
