@@ -7,9 +7,8 @@ import { Link } from "react-router-dom"
 const HomeHeader = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
- const handleToggleMenu = () => {
-  setIsMenuOpen(prevState => !prevState);
- };
+  const handleToggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
  return (
   <div className=''>
    <header className='flex justify-between px-1 md:px-10 m-auto align-middle items-center top-0 left-0 w-[100%] bg-inherit'>
