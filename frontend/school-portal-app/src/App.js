@@ -19,6 +19,7 @@ import {
 } from "react-router-dom"
 import PortalLayout from './PortalLayout';
 import PortalHome from './pages/PortalHome';
+import Assignment from './pages/Assignment';
 
 
 
@@ -51,6 +52,7 @@ function App() {
     <Routes>
       <Route path='/studentportal' element={<SideBar />}>
         <Route index element={<PortalHome />}></Route>
+        <Route path='assignment' element={<Assignment />}></Route>
         {/* <Route path='/about' element={<About />} /> */}
       </Route>
     </Routes>

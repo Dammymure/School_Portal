@@ -117,7 +117,7 @@ const SideNavbar = () => {
       </ul> */}
       </div>
 
-      <div className=" text-black overflow-x-hidden bg-[#e9e5f8] h-screen w-screen">
+      <div className=" text-black overflow-x-hidden overflow-y-hidden bg-[#e9e5f8] h-screen w-screen">
         <Outlet />
       </div>
     </div>

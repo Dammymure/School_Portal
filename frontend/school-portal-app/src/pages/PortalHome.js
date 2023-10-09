@@ -1,6 +1,6 @@
 import React from 'react';
 import studImg from "../images/portal-img/student-img.svg"
-import { CalendarComponent } from '@syncfusion/ej2-react-calendars'
+// import { CalendarComponent } from '@syncfusion/ej2-react-calendars'
 import Calendar from '../components/Calender';
 import English from "../images/icons/subjectIcons/englishIcon.png"
 import Chemistry from "../images/icons/subjectIcons/chemistryIcon.png"
@@ -179,7 +179,9 @@ const PortalHome = () => {
           </div>
 
           <div class="md:row-span-3 md:col-span-1 bg-white flex border-none mt-2 md:mt-0 flex-col ">
-            <div className='bg-black h-fit w-fit flex justify-center border-none align-middle mx-auto p-0'><CalendarComponent className='w-[100%]'/></div>
+            <div className='bg-black h-fit w-fit flex justify-center border-none align-middle mx-auto p-0'>
+              {/* <CalendarComponent className='w-[100%]'/> */}
+              </div>
             <div></div>
           </div>
         </div>
